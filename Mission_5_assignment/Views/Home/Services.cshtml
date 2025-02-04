@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Services";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Here are the services that I offer with music.</p>
+<p>Below is the calculator to see the price of production tutoring:</p>
+<label>Enter the number to hours needed: </label>
+<br />
+<input type="number" id="numHours" min="1" required />
+<br />
+<br
+<label>My rate ($/hour):</label>
+<br />
+<input type="number" id="numRate" value="10" readonly />
+<br />
+<br />
+<input type="submit" value="Calculate Total" id="btnSubmit" class="btn btn-secondary" />
+<br />
+<br />
+<label>Total: </label>
+<br />
+<input type="text" id="txtTotal" readonly />
+<br />
+<br />
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back to Home</a>
+
+
